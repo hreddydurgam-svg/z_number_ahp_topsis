@@ -2,7 +2,7 @@
 
 This repository contains the production-grade computational framework engineered to resolve paradoxical decision tensions between empirical sustainability yields and capital expenditure (CAPEX) barriers in industrial supply chains. 
 
-The underlying pipeline completely discards standard fuzzy vertex arithmetic and subjective post-hoc scenario weightings. Instead, it pioneers an integrated hybrid architecture linking **Trapezoidal Z-Numbers (TrZN)**, **AHP Consistency-Ratio (CR) filtering**, a **10,000-iteration non-parametric population bootstrap**, and **True Euclidean FTOPSIS spatial geometry** to construct an un-biased, data-driven Action Priority Matrix.
+The underlying pipeline completely discards standard fuzzy vertex arithmetic and subjective post-hoc scenario weightings. Instead, it pioneers an integrated hybrid architecture linking **Z-Numbers (ZNum)**, **AHP Consistency-Ratio (CR) filtering**, a **10,000-iteration non-parametric population bootstrap**, and **True Euclidean FTOPSIS spatial geometry** to construct an un-biased, data-driven Action Priority Matrix.
 
 ---
 
@@ -41,7 +41,7 @@ This cell initializes the workspace and constructs a high-density, maximum-entro
 ### Cell 2: Z-Number Active Defuzzification & 10,000-Run Population Bootstrap
 This cell executes the core Z-number reliability conversion and a high-density non-parametric bootstrap resampling routine to evaluate hierarchical structural stability against classical perturbation flaws.
 
-* **Active TrZN Reliability Extraction:** Evaluates individual matrix integrity by transforming the logical errors of each expert (CRk) into a deterministic secondary reliability measure (αk):
+* **Active ZNum Reliability Extraction:** Evaluates individual matrix integrity by transforming the logical errors of each expert (CRk) into a deterministic secondary reliability measure (αk):
   $$α_k = 1.0 - \frac{CR_k}{0.10}$$
 * **Mathematical Weight Defuzzification:** Explicitly eliminates cognitive over-fitting or arbitrary manual interval expansion. The algorithm executes an active defuzzification by adjusting the primary fuzzy restriction (Aijk) by the square root of its structural reliability:
   $$Z_{ijk} = A_{ijk} \times \sqrt{α_k}$$
@@ -49,7 +49,7 @@ This cell executes the core Z-number reliability conversion and a high-density n
 * **Bootstrap vs. Static Perturbation Cross-Validation:** Executes a dual-track simulation comparison loop with a forced density of 10,000 runs:
     * *Classical baseline:* Injects standard ±10% artificial uniform noise over the baseline weights, exposing how static shifts mask true data variance.
     * *Resampling engine:* Performs non-parametric sampling with replacement across the 202 unmapped expert records, calculating empirical standard deviations (σ) and stabilizing the raw material priority pool to a purified consensus weight of 0.3852 ± 0.0050.
-* **File Export:** Writes complete statistical validation tables containing structural cross-validation parameters to `TrZN_Bootstrap_CrossValidation_Results.csv`.
+* **File Export:** Writes complete statistical validation tables containing structural cross-validation parameters to `ZN_Bootstrap_CrossValidation_Results.csv`.
 
 ### Cell 3: Techno-Economic Triangulation & True Euclidean FTOPSIS Inversion
 This module executes the downstream decision multi-criteria engine. It extracts empirical field-benefit arrays from distributed matrices and performs vector resolution against literature-calibrated data models.
@@ -79,10 +79,10 @@ The final module maps performance arrays onto an Action Priority Matrix and prop
 [Cell 1: Dirichlet Synthesis]
        │
        ▼ (Produces)
- ─── Synthesized_Expert_TrZN_Data.csv ───► [Cell 2: TrZN active Defuzzification & 10k Bootstrap]
+ ─── Synthesized_Expert_TrZN_Data.csv ───► [Cell 2: ZN active Defuzzification & 10k Bootstrap]
                                                                │
                                                                ▼ (Produces)
-                                                 ─── TrZN_Bootstrap_CrossValidation_Results.csv
+                                                 ─── ZN_Bootstrap_CrossValidation_Results.csv
                                                  
 [Cell 3 Ingestion: External CSV / Excel Sheets]
        │
