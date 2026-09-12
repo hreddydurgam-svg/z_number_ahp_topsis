@@ -1,8 +1,8 @@
-# Techno-Economic Triangulation and True Euclidean FTOPSIS Optimization Engine
+# Techno-Economic Triangulation and True Euclidean TOPSIS Optimization Engine
 
 This repository contains the production-grade computational framework engineered to resolve paradoxical decision tensions between empirical sustainability yields and capital expenditure (CAPEX) barriers in industrial supply chains. 
 
-The underlying pipeline completely discards standard fuzzy vertex arithmetic and subjective post-hoc scenario weightings. Instead, it pioneers an integrated hybrid architecture linking **Z-Numbers (ZNum)**, **AHP Consistency-Ratio (CR) filtering**, a **10,000-iteration non-parametric population bootstrap**, and **True Euclidean FTOPSIS spatial geometry** to construct an un-biased, data-driven Action Priority Matrix.
+The underlying pipeline completely discards standard fuzzy vertex arithmetic and subjective post-hoc scenario weightings. Instead, it pioneers an integrated hybrid architecture linking **Z-Numbers (ZNum)**, **AHP Consistency-Ratio (CR) filtering**, a **10,000-iteration non-parametric population bootstrap**, and **True Euclidean TOPSIS spatial geometry** to construct an un-biased, data-driven Action Priority Matrix.
 
 ---
 
@@ -51,10 +51,10 @@ This cell executes the core Z-number reliability conversion and a high-density n
     * *Resampling engine:* Performs non-parametric sampling with replacement across the 202 unmapped expert records, calculating empirical standard deviations (σ) and stabilizing the raw material priority pool to a purified consensus weight of 0.3852 ± 0.0050.
 * **File Export:** Writes complete statistical validation tables containing structural cross-validation parameters to `ZN_Bootstrap_CrossValidation_Results.csv`.
 
-### Cell 3: Techno-Economic Triangulation & True Euclidean FTOPSIS Inversion
+### Cell 3: Techno-Economic Triangulation & True Euclidean TOPSIS Inversion
 This module executes the downstream decision multi-criteria engine. It extracts empirical field-benefit arrays from distributed matrices and performs vector resolution against literature-calibrated data models.
 
-* **Dynamic Ingestion Inversion:** Seamlessly targets Google Drive pathways (`/content/drive/MyDrive/FAHP-FTOPSIS Inputs`) or falls back to local data strings via the python glob sequence `alternative_matrix.xlsx - *.csv`. It loops through available criteria sheets, parses local evaluation parameters, strips column whitespaces, and routes values into their respective primary global classifications.
+* **Dynamic Ingestion Inversion:** Seamlessly targets Google Drive pathways (`/content/drive/MyDrive/AHP-TOPSIS Inputs`) or falls back to local data strings via the python glob sequence `alternative_matrix.xlsx - *.csv`. It loops through available criteria sheets, parses local evaluation parameters, strips column whitespaces, and routes values into their respective primary global classifications.
 * **Techno-Economic Triangulation:** Eliminates the vulnerability of requesting survey respondents to estimate operational budgets by decoupling the evaluation axes. Sustainability Benefit maps exclusively to the empirical expert weights. Implementation Impedance (S) is locked to a deterministic 1-9 matrix derived by arithmetic aggregation of real capital cost (CAPEX) metrics and integration difficulties extracted from specialized lifecycle databases (IEA, NREL ATB, Ecoinvent v3.9).
 * **True Euclidean Space Normalization:** Normalizes all parameters to a uniform, synchronized [0,1] vector domain:
   $$v_{i,\text{benefit}} = \frac{B_i}{B_{\max}}$$
@@ -62,12 +62,12 @@ This module executes the downstream decision multi-criteria engine. It extracts 
 * **Geometric Inversion Distance Processing:** Rejects typical fuzzy vertex arithmetic that over-inflates unviable infrastructural setups. It maps alternatives directly onto a Cartesian plane and uses true Euclidean geometry to process distance arrays to the Positive Ideal Solution (d+ mapped at [1.0, 0.0]) and Negative Ideal Solution (d- mapped at [0.0, 1.0]):
   $$d_i^+ = \sqrt{(v_{i,\text{benefit}} - 1.0)^2 + (v_{i,\text{impedance}} - 0.0)^2}$$
   $$d_i^- = \sqrt{(v_{i,\text{benefit}} - 0.0)^2 + (v_{i,\text{impedance}} - 1.0)^2}$$
-* **Closeness Coefficient Optimization:** Computes final performance indexes via Closeness Coefficients ($CC_i = \frac{d_i^-}{d_i^+ + d_i^-}$), isolating procurement interventions (*Choose recyclable materials*: CCi = 0.8508; *Source sustainably*: CCi = 0.7583) as absolute global optima over speculative tracking infrastructure. Outputs the full 24-row matrix to `FTOPSIS_Euclidean_Rankings_Results.csv`.
+* **Closeness Coefficient Optimization:** Computes final performance indexes via Closeness Coefficients ($CC_i = \frac{d_i^-}{d_i^+ + d_i^-}$), isolating procurement interventions (*Choose recyclable materials*: CCi = 0.8508; *Source sustainably*: CCi = 0.7583) as absolute global optima over speculative tracking infrastructure. Outputs the full 24-row matrix to `TOPSIS_Euclidean_Rankings_Results.csv`.
 
 ### Cell 4: 10,000-Run FTOPSIS Bootstrap & Automated Topological Mapping
 The final module maps performance arrays onto an Action Priority Matrix and propagates empirical errors through the geometric vector space to verify structural stability.
 
-* **FTOPSIS Error Propagation Bootstrapping:** Reverses global scores to isolate true raw baseline parameters. It executes a final 10,000-run FTOPSIS validation, repeatedly sampling weights from random normal structures aligned with the population standard deviations derived in Cell 2. It cross-validates rank-retention limits, demonstrating a 100.00% structural rank-retention probability for the global optima under maximum internal disagreement.
+* **TOPSIS Error Propagation Bootstrapping:** Reverses global scores to isolate true raw baseline parameters. It executes a final 10,000-run TOPSIS validation, repeatedly sampling weights from random normal structures aligned with the population standard deviations derived in Cell 2. It cross-validates rank-retention limits, demonstrating a 100.00% structural rank-retention probability for the global optima under maximum internal disagreement.
 * **Spatial Median Quadrant Partitioning:** Suppresses manual partitioning bias by locking the Cartesian coordinate dividers directly to the computed statistical medians of the complete alternative universe (Impact Median Threshold CCi = 0.4362; Impedance Median Threshold S = 4.50). This segments options into four operational zones: *Quick Wins (P1)*, *Major Projects (P2)*, *Fill-Ins (P3)*, and *Thankless Tasks (Exclude)*.
 * **Anti-Clutter Visual Engineering:** Generates a publication-ready scattered topological map using matplotlib axis engines. It plots high-density coordinate rings, color-coded by tactical quadrant, embeds internal data rank counters directly into structural nodes, flips the implementation difficulty gradient to enhance logical interpretation, and writes a high-resolution, 300 DPI image asset to `Action_Priority_Matrix_HighRes.png` while saving raw classifications to `Final_Action_Priority_Assignments.csv`.
 
@@ -86,8 +86,8 @@ The final module maps performance arrays onto an Action Priority Matrix and prop
                                                  
 [Cell 3 Ingestion: External CSV / Excel Sheets]
        │
-       ▼ (Triangulates & Processes via Euclidean FTOPSIS)
- ─── FTOPSIS_Euclidean_Rankings_Results.csv ───► [Cell 4: 10k FTOPSIS Propagation & Median Plot]
+       ▼ (Triangulates & Processes via Euclidean TOPSIS)
+ ─── TOPSIS_Euclidean_Rankings_Results.csv ───► [Cell 4: 10k TOPSIS Propagation & Median Plot]
                                                                │
                                                                ├─► (Produces Image) Action_Priority_Matrix_HighRes.png
                                                                └─► (Produces Data)  Final_Action_Priority_Assignments.csv
